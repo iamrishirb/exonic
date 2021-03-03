@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#141414">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#141414">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#141414">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#13ce66">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exonic</title>
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="blur" class="wrapper">
+        <!-- ================== Navbar ================= -->
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html">Exonic</a>
+            </div>
+            <div id="nav">
+                <ul id="nav-items">
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Play <i class="fa fa-trophy"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Watch <i class="fa fa-tv"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Discover <i class="fa fa-globe"></i></a></li>
+                    <li><a class="login" href="#" onclick="toggleBlur()"> <i class="fa fa-user-circle"></i> Login / Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <div class="logo">
+                <a href="index.html">Exonic</a>
+            </div>
+            <span id="nav-icon">
+                <a href="#" class ="download">DOWNLOAD APP</a>
+                <a href="#" class ="mobile-download"><i class="fa fa-download"></i> APP</a>
+                <i class="fa fa-bars" style="color: #fff;" onclick="openNav()"></i>
+                <!-- <a href="#" onclick="openNav()"><img src="images/menu.png" alt="mobile menu" style="width: 30px;"></a> -->
+            </span>
+            <div id="main-nav" class="sidenav">
+                <div id="mobile-login">
+                    <img src="images/login.png" alt="user-icon"><a href="#" onclick="toggleBlur()">LOGIN <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div class="submenu">
+                    <li><a href="#"><i class="fa fa-caret-right"></i> PLAY <i class="fa fa-trophy"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> WATCH <i class="fa fa-tv"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> DISCOVER <i class="fa fa-wpexplorer"></i></a></li>
+                </div>
+                <div class="submenu">
+                    <li><a href="#"><i class="fa fa-caret-right"></i> FAQs / HELP <i class="fa fa-question-circle-o"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> CAREERS <i class="fa fa-graduation-cap"></i></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> ABOUT <i class="fa fa-lightbulb-o"></i></a></li>
+                    <li>Not a member Yet? <a href="#" class="active"> SIGN UP !</a></li>
+                </div>
+                <div class="social">
+                    <span><a href="#"><i class="fa fa-facebook-square"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-instagram"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-youtube-play"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-twitch"></i> </a></span> 
+                    <span><a href="#"><i class="fa fa-telegram"></i> </a></span>
+                </div>
+                
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">  &times;</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="sidebar left" id = "sidebar-left">
+                <!-- <img src="images/pubmbanner.jpg" alt=""> -->
+                Your Desktop responsive ad goes here
+            </div>
+            <div id="matches">
+                <div id="tabs">
+                    <span id="live" class = "tab">
+                        LIVE
+                    </span>
+                    <span id="upcoming" class="tab">
+                        UPCOMING
+                    </span>
+                    <span id="closed" class="tab">
+                        CLOSED
+                    </span>
+                </div>
+                <div id="cards-wrapper">
+                    <div class="mobile-ad-space">
+                        Your Responsive Mobile Ad goes here...
+                    </div>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                        <div class="match-card">
+                            <div class="match-icon">
+                            </div>
+                            <div class="match-details">
+                                <h3 class="match-title">
+                                    Squad Super
+                                </h3>
+                                <div class="card-row">
+                                    <div class="more">
+                                        <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                        <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                        <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                    </div>
+                                    <div class="less">
+                                        <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                        <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                        <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="match-card">
+                        <div class="match-icon">
+                        </div>
+                        <div class="match-details">
+                            <h3 class="match-title">
+                                Squad Super
+                            </h3>
+                            <div class="card-row">
+                                <div class="more">
+                                    <span class="item"><i class="fa fa-calendar"></i> 24 May, 11:00am</span><br>
+                                    <span class="item"><i class="fa fa-users"></i> 875/1000</span><br>
+                                    <span class="item"><i class="fa fa-map"></i> Erangel</span>
+                                </div>
+                                <div class="less">
+                                    <span class="item"><i class="fa fa-fighter-jet"></i> Solo</span><br>
+                                    <span class="item"><i class="fa fa-trophy"></i> ₹1000</span><br>
+                                    <span class="item"><i class="fa fa-money"></i> ₹50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="pagination">
+                        <!-- <a href="#" id="prev">&laquo;</a>
+                        <a href="#" id="next">&raquo;</a> -->
+                        <a href="#" class="active">1</a>
+                    </div>
+                    <div class="mobile-ad-space">
+                        Your Responsive Mobile Ad goes here...
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar right" id = "sidebar-left">
+                <!-- <img src="images/pubmbanner.jpg" alt=""> -->
+                Your Desktop responsive ad goes here
+            </div>
+        </div>
+        <footer>
+            <div id="links">
+                <p class="social">
+                    <span><a href="#"><i class="fa fa-facebook-square"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-instagram"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-youtube-play"></i> </a></span>
+                    <span><a href="#"><i class="fa fa-twitch"></i> </a></span> 
+                    <span><a href="#"><i class="fa fa-telegram"></i> </a></span>    
+                </p>
+                <p class="footernav">
+                    <span><a href="#"><i class="fa fa-caret-right"></i> About</a></span>
+                    <span><a href="#"><i class="fa fa-caret-right"></i> Disclaimer</a></span>
+                    <span><a href="#"><i class="fa fa-caret-right"></i> Privacy policy</a></span>
+                    <span><a href="#"><i class="fa fa-caret-right"></i> Contact Us</a></span>
+                </p>
+            </div>
+            <div id="metadata">
+                <p>All Rights Reserved <i class="fa fa-registered"></i> Exonic Games Ltd. | <i class="fa fa-copyright"></i> 2020</p>
+                <p>Designed &amp; Developed by <a href="#">Rishi Bajpai</a> &amp; <a href="#">Rohit Nishad</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ================ script ==================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("main-nav").style.width = "80%";
+        }
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("main-nav").style.width = "0";
+        }
+
+        //add active class on tabs on click
+        $tabs = $("#tabs");
+        $tab = $(".tab");
+        $(".tab").click(function() {
+            $(".tab").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        //pagination script
+        var pages = 6;  // var pages = Math.round((no of rows fetched from database query / 10))
+        pageSize = 8;   // no of match-cards in a page
+
+        showPage = function(page) {
+            $totalcards = $(".match-card").length;
+            $(".match-card").hide();
+            $(".match-card").each(function(n) {
+                if (n >= pageSize * (page - 1) && n < pageSize * page)
+                    $(this).show();
+            });        
+        }
+        var pageCount = Math.ceil($(".match-card").size() / pageSize);
+        for (var i = 1; i < pageCount; i++) {
+                $(".pagination").append('<a href="#">' + (i + 1) + '</a>');  
+        }
+        showPage(1);
+        $(".pagination a").click(function() {
+            $(".pagination a").removeClass("active");
+            $(this).addClass("active");
+            showPage(parseInt($(this).text())) 
+        });
+
+        // pagination previous and next buttons
+
+        // var $currentPage = $(".active");
+        // $("#next").click(function() {
+        //     $currentPage = $currentPage.next();
+        //     $(".pagination a").removeClass("active");
+        //     $(this).addClass("active");
+        // });
+        // var $currDiv = $( "#startPrev" );
+        // $( "button" ).click(function() {
+        //     $currentPage  = $currentPage .prev();
+        //     $(".pagination a").removeClass("active");
+        //     $(this).addClass("active");
+        // });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,988 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(252,38,0) black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    background: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), #000), url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    background: #141414;
+    height: auto;
+    padding: 10px 5px;
+    color: #999;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+footer p a{
+    color: rgba(255, 208, 0, 0.7);
+}
+footer p a:hover{
+    color: rgb(255, 208, 0);
+    font-weight: 500;
+    transition: 0.5s;
+}
+footer .social{
+    margin: 10px 0px;
+}
+footer .social a{
+    margin: 0px 5px;
+    font-size: 1.3em;
+}
+footer .social a i:hover{
+    color: rgb(255, 208, 0);
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+.footernav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.footernav span{
+    display: inline-flex;
+    padding: 0px 5px;
+}
+.footernav span a{
+    color: #cecece;
+}
+.footernav span a:hover{
+    color: rgb(255, 208, 0);
+    transition: 0.5s ease-in;
+}
+footer #metadata{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+    padding: 5px 30px;
+    border: none;
+    border-top: 1px solid #999;
+}
+
+
+/* ======================== navigation part ========================== */
+#navbar{
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #141414;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 5px 10px #000;
+}
+#logo a{
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+#nav{
+    padding: 0px 40px;
+    margin-top: 0;
+    margin-right: 50px;
+}
+#nav ul{
+    margin-top: 15px;
+}
+#nav-items li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+#nav-items li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+#nav-items li a i{
+    display: none;
+}
+#nav-items li a:hover{
+    color: rgb(255, 208, 0);
+    transition: 1s ease;
+}
+.login{
+    background: orangered;
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: fit-content;
+}
+#nav-items li .login:hover{
+    background: rgb(255, 0, 76);
+    color: #000;
+    transition: 0.5s ease-in;
+}   
+#nav-icon{
+    display: none;
+}
+.closebtn{
+    display: none;
+}
+.download{
+    display: none;
+}
+#mobile-nav{
+    display: none;
+}
+
+/* ============================ content section ====================== */
+#content{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 15% 65% 15%;
+    grid-auto-rows: 650px;
+    grid-column-gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.left img, .right img{
+    width: 100%;
+    position: center;
+    margin: 20% 0%;
+    border-radius: 3px;
+}
+.sidebar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 550px;
+    padding: 20px;
+    margin-top: 50px;
+    background: rgba(255, 208, 0, 0.7);
+    background: linear-gradient(to bottom, rgb(252, 38, 0) 0%, rgb(182, 0, 46) 51%, rgb(0, 0, 0) 100%);
+    color: #000;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 3px;
+}
+#matches{
+    border-radius: 2px;
+    padding: 20px;
+    margin: 20px;
+}
+#tabs{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #292929;
+    color: #666;
+    border-radius: 3px;
+}
+#tabs .tab{
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+}
+.tab.active{
+    background: #111111cc;
+    color: rgb(255, 208, 0);
+    box-shadow: 1px 1px 5px #000;
+}
+#upcoming.active{
+    background: #111111cc;
+    color: rgb(255, 208, 0);
+    box-shadow: 1px 1px 5px #000;
+}
+#closed.active{
+    background: #111111cc;
+    color: rgb(255, 208, 0);
+    box-shadow: 1px 1px 5px #000;
+}
+.mobile-ad-space{
+    display: none;
+}
+#cards-wrapper{
+    margin: 20px 0px;
+    height: 550px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    border-top: 1px solid rgba(0, 0, 0, 0.171);
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 38, 0) transparent;
+}
+.match-card{
+    width: 95%;
+    height: 180px;
+    border-radius: 10px;
+    background: #161616;
+    box-shadow: 0px 0px 10px #000;
+    margin: 2%;
+    display: flex;
+    align-items: flex-start;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background: black;
+    border-radius: 10px;
+}   
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(252, 38, 0) 0%, rgb(182, 0, 46) 51%, rgb(0, 0, 0) 100%);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to top, rgb(252, 38, 0) 0%, rgb(182, 0, 46) 51%, rgb(0, 0, 0) 100%);
+    border-radius: 10px;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: 1s ease-in;
+}
+::-webkit-scrollbar-corner{
+    background: black;
+    visibility: hidden;
+}
+.match-icon{
+    height: inherit;
+    width: 160px;
+    background: url('images/pubg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+}
+.match-details{
+    width: 80%;
+}
+.match-title{
+    color: #999;
+    margin-top: 0px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 0px 10px 0px 0px;
+    border-bottom: 2px solid #555;
+}
+.card-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10px 20px;
+    color: #ddd;
+}
+.card-row .more{
+    width: 60%;
+}
+.card-row .less{
+    width: 40%;
+}
+.card-row .item{
+    display: inline-block;
+    margin: 5px 0px;
+}
+.card-row .item:hover{
+    color: rgb(255, 208, 0);
+    transition: 0.5s ease-in;
+}
+.join a{
+    padding: 5px 20px;
+    background: rgb(252, 38, 0);
+    color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+}
+.join a:hover{
+    background: linear-gradient(to bottom, rgb(252, 38, 0), rgb(121, 0, 30));
+    transition: 0.8s ease;
+}
+.match-icon:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px #000;
+    transition: 1s ease-in-out;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.pagination a {
+  color: rgb(255, 255, 255);
+  float: left;
+  padding: 4px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.pagination a.active {
+  background-color: rgb(252, 38, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+  background-color: rgb(255, 208, 0);
+  border-radius: 5px;
+  transform: scale(0.8);
+  font-weight: 700;
+  color: #000;
+  transition: 0.5s ease-in;
+}
+/* ============== popup box styles =============== */
+/* .wrapper#blur.active{
+    filter: blur(200px);
+    transition: 0.2s;
+}
+#popup, #otpform{
+    position: fixed;
+    top: 150px;
+    left: 25%;
+    background: #fff;
+    width: 50%;
+    height: 300px;
+    padding: 0;
+    box-shadow: 0px 5px 30px #000;
+    visibility: hidden;
+    opacity: 0;
+}
+#popup .closebtn,
+#otpform .closebtn {
+    display: block;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    margin-right: 20px;
+    color: #000;
+}
+#popup.active,
+#otpform.active{
+    top: 150px;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease;
+}
+#popup .closebtn:hover,
+#otpform .closebtn:hover{
+    color: rgb(255, 38, 0);
+    transition: 0.5s;
+}
+.form{
+    padding: 5vh;
+}
+.form h1{
+    font-weight: 700;
+    font-size: 1.6em;
+    color: #141414;
+}
+.form input{
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    color: #141414;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(255, 208, 0);
+}
+.form input:focus{
+    outline: 2px solid rgb(255, 208, 0);
+    border: 4px solid #000;
+    background: #eee;
+    transition: 0.5s ease-in;
+}
+.form input[type="submit"]{
+    border: 2px solid rgb(255, 208, 0);
+    background: rgb(0, 0, 0);
+    color: rgb(255, 208, 0);
+}
+.form input[type="submit"]:hover{
+    outline: none;
+    color: #000;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(255, 208, 0);
+    transition: 1s ease;
+}
+.form .digit{
+    width: 100px;
+    letter-spacing: 15px;
+}
+ */
+
+/* ======================== styles for large screen tablet devices ======================== */
+@media screen and (max-width: 900px){
+
+    #content{
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 90vh;
+        grid-column-gap: 1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left img, .right img{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    #matches{
+        border-radius: 20px;
+        padding: 0px;
+    }
+    #tabs{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #292929;
+        color: #666;
+        border-radius: 3px;
+    }
+    #tabs .tab{
+        width: 33%;
+        padding: 10px;
+        border-radius: 2px;
+        text-align: center;
+    }
+    #tabs .active{
+        background: #111111cc;
+        box-shadow: 1px 1px 5px #000;
+    }
+    .mobile-ad-space{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        color: #141414;
+        font-size: 1em;
+        font-weight: 700;
+        background: rgba(255, 208, 0, 0.8);
+        text-align: center;
+    }
+    #cards-wrapper{
+        margin: 20px 0px;
+        height: 75vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top: 1px solid rgba(0, 0, 0, 0.171);
+    }
+    .match-card {
+        height: 150px;
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+    .match-details{
+        margin-left: 0px;
+    }
+    .match-details .match-title{
+        margin-top: 0px;
+        padding: 5px 5px 5px 20px;
+        background: rgb(15, 15, 15);
+        border-radius: 0px 10px 0px 0px;
+    }
+    .card-row .item{
+        margin: 5px 0px;
+    }
+
+    /* ============= base navigation styles ============== */
+    #navbar{
+        padding: 15px;
+        display: none;
+    }
+    #mobile-nav{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #141414;
+        width: 95%;
+        max-width: 100%;
+        box-shadow: 0px 5px 10px #000;
+    }
+    .logo a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: rgb(255, 208, 0);
+        letter-spacing: 0.2em;
+        font-weight: 500;
+    }
+    #mobile-nav{
+        padding: 15px 30px;
+    }
+    #main-nav {
+        position: fixed;
+        height: 100%; 
+        width: 0; 
+        z-index: 1;
+        top: 0; 
+        right: 0;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 187, 0); 
+        overflow-x: hidden; 
+        transition: 0.5s;  
+    }
+    #nav ul{
+        margin-top: 0vh;
+    }
+    #main-nav .submenu{
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid rgb(167, 136, 0);
+    }
+    #main-nav .social{
+        margin: 10px 20px;
+        border: none;
+    }
+    #main-nav .social a{
+        margin: 0px 5px;
+        color: rgb(61, 50, 0);
+    }
+    #main-nav .social a i:hover{
+        color: #141414;
+        text-shadow: 0px 0px 10px #000;
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+    #main-nav li{
+        display: block;
+        color: #141414;
+        font-size: 0.8em;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+    }
+    #main-nav li a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        color: #141414;
+        display: block;
+        padding: 5px 0px;
+        transition: 0.3s;
+        margin: 5px 10px;
+    } 
+    #main-nav li a i{
+        display: inline-block;
+    }
+    #main-nav li a:hover {
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        transform: scale(1.05);
+        transition: 0.5s ease-in;
+        text-shadow: 0px 0px 5px rgb(150, 110, 0);
+    }
+    #main-nav .closebtn {
+        width: fit-content;
+        display: flex;
+        align-self: center;
+        font-size: 1.2em;
+        margin: 30px auto;
+        padding: 6px 15px;
+        border-radius: 50%;
+        background: #141414;
+        color: rgb(255, 187, 0);
+    }
+    #main-nav .closebtn:hover{
+        color: #ffffff;
+        background: rgb(61, 50, 0);
+        transform: scale(1.05);
+        transition: 0.5s ease-in;
+    }
+    #nav-icon{
+        display: block;
+        margin: 10px;
+    }
+    #main-nav #mobile-login a:hover{
+        color: rgb(255, 255, 255);
+        transform: scale(1.05);
+        transition: 0.5s ease-in;
+    }
+    #mobile-login{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #mobile-login{
+        width: 100%;
+        background: #141414;
+        box-shadow: 0px 5px 10px #000;
+    }
+    #mobile-login img{
+        display: inline-block;
+        width: 80px;
+        padding: 20px;
+    }
+    #mobile-login a{
+        height: inherit;
+        display: inline-block;
+        margin: auto 0px;
+        color: rgb(255, 187, 0);
+        letter-spacing: 0.2em;
+    }
+    #main-nav .submenu li a.active {
+        display: inline-block;
+        width: max-content;
+        padding: 5px 20px;
+        background-color: #141414;
+        color: rgb(255, 208, 0);
+        font-weight: 300;
+    }
+    #nav{
+        margin-right: 20px;
+    }
+    .download{
+        margin: 0px 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        color: #141414;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        background: rgb(255, 208, 0);
+    }
+    .download:hover{
+        background: rgba(255, 208, 0, 0.2);
+        color: rgb(255, 208, 0);
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        font-weight: 500;
+        transition: 0.5s ease;
+    }
+    .mobile-download{
+        display: none;
+    }
+
+    /* ============== popup box styles =============== */
+    /* .wrapper#blur.active{
+        filter: blur(200px);
+        transition: 0.2s;
+    }
+    #popup, #otpform{
+        position: fixed;
+        top: 100px;
+        left: 10%;
+        background: #fff;
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0px 5px 30px #000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s ease;
+    }
+    #popup .closebtn, 
+    #otpform .closebtn {
+        display: block;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 20px;
+        font-size: 36px;
+        margin-right: 20px;
+        color: #000;
+    }
+    #popup.active,
+    #otpform.active{
+        top: 150px;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+    #popup .closebtn:hover,
+    #otpform .closebtn:hover{
+        color: rgb(255, 38, 0);
+        transition: 0.5s;
+    }
+    .form{
+        padding: 10vh 5vh;
+    }
+    .form h1{
+        font-weight: 700;
+        font-size: 1.2em;
+        color: #141414;
+    }
+    .form input{
+        padding: 10px;
+        border: none;
+        font-family: inherit;
+        color: #141414;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        border: 2px solid transparent;
+        border-bottom: 2px solid rgb(255, 208, 0);
+    }
+    .form input:focus{
+        outline: 2px solid rgb(255, 208, 0);
+        border: 4px solid #000;
+        background: #eee;
+        transition: 0.5s ease-in;
+    }
+    .form input[type="submit"]{
+        border: 2px solid rgb(255, 208, 0);
+        background: rgb(0, 0, 0);
+        color: rgb(255, 208, 0);
+    }
+    .form input[type="submit"]:hover{
+        outline: none;
+        border: 2px solid rgb(0, 0, 0);
+        background: rgb(255, 208, 0);  
+        color:#000;
+        transition: 0.5s ease;
+    } */
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 480px) {
+    
+    #mobile-nav{
+        padding: 15px;
+    }
+    #nav {
+        padding: 0px 15px;
+    }
+    #logo a{
+        font-size: 1.2em;
+    }
+    .left img, .right img{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+        visibility: hidden;
+    }
+    #tabs .tab{
+        width: 33%;
+        padding: 10px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    #cards-wrapper{
+        margin: 20px 0px;
+        height: 75vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top: 1px solid rgba(0, 0, 0, 0.171);
+    }
+    .match-card{
+        margin: 2%;
+        height: 130px;
+        margin-bottom: 30px;
+        font-size: 0.7em;
+    }
+    .match-card .match-icon{
+        height: inherit;
+        width: 30%;
+    }
+    .match-card .match-details{
+        margin-left: 0px;
+    }
+    .match-card .match-title{
+        margin-top: 0px;
+        padding: 5px 5px 5px 20px;
+        background: #0a0a0a;
+        border-radius: 0px 10px 0px 0px;
+    }
+    .match-card .card-row{
+        margin: 5px 10px;
+    }
+    .card-row .item{
+        margin: 3px 0px;
+    }
+    footer #metadata {
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+
+}
+
+/* ======================== styles for very small screen mobile devices ======================== */
+@media screen and (max-width: 320px) {
+
+    #mobile-nav{
+        padding: 10px;
+    }
+    #nav {
+        padding: 0px 10px;
+    }
+    #logo a{
+        font-size: 1.2em;
+    }
+    #nav ul li:nth-child(5){
+        padding-bottom: 10px;
+    }
+    #main-nav li a{
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .nav-icon{
+        padding-right: -100px;
+    }
+    .download{
+        display: none;
+    }
+    .mobile-download{
+        margin-right: 10px;
+        font-size: 0.6rem;
+        display: inline-block;
+        padding: 5px 10px;
+        color: #141414;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        background: rgb(255, 208, 0);
+    }
+    .mobile-download:hover{
+        background: rgba(255, 208, 0, 0.2);
+        color: rgb(255, 208, 0);
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        font-weight: 500;
+        transition: 0.5s ease;
+    }
+    .logo a {
+        font-size: 1.2em;
+    }
+
+    .left img, .right img{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+        visibility: hidden;
+    }
+    #tabs{
+        width: 90%;
+        margin: 10px auto;
+        margin-top: 40px;
+    }
+    #tabs .tab{
+        width: 33%;
+        padding: 10px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    #cards-wrapper{
+        margin: 20px 0px;
+        height: 75vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top: 1px solid rgba(0, 0, 0, 0.171);
+    }
+    .match-card{
+        margin: 2%;
+        height: 100px;
+        margin-bottom: 10px;
+        font-size: 9px;
+    }
+    .match-details{
+        width: 75%;
+    }
+    .match-card .match-icon{
+        height: inherit;
+        width: 25%;
+    }
+    .match-card .match-title{
+        padding: 5px 5px 5px 10px;
+        margin-bottom: 5px;
+    }
+    .match-card .card-row{
+        margin: 0px 10px;
+    }
+
+    /* .wrapper#blur.active{
+        filter: blur(200px);
+    }
+    #popup, #otpform{
+        position: fixed;
+        top: 100px;
+        left: 10%;
+        background: #fff;
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0px 5px 30px #000;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .form{
+        padding: 10vh 5vh;
+    }
+    .form h1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .form input{
+        padding: 5px;
+        font-size: 0.6em;
+        letter-spacing: 0.1em;
+    } */
+    footer p{
+        font-size: 0.7rem;
+    }
+    .footernav span{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .match-card .match-icon {
+        height: inherit;
+        width: 20%;
+    }
+    .match-details {
+        width: 80%;
+    }
+}
+
+/* ======================== styles for mobile devices ======================== */
+/* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+} */
+
+
+/* ===================== animation keyframes ======================== */
+@keyframes appear{
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 5%;
+    }
+}
